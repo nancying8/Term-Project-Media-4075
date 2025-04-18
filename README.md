@@ -41,7 +41,7 @@ Folder Structure
 Author
 Nancy Wu  
 Graphic Designer  
-All rights reserved @ 2024 Nancy Wu
+Designed and Coded by Nancy Wu @ 2025
 
-https://github.com/nancying8/Term-Project-Media-4075
+
 
