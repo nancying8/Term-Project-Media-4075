@@ -1,0 +1,347 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+    --bold: 700;
+    --radius: 1.25rem;
+    --boxShadow: -1px 15px 30px -12px #124559 ;
+    --border: solid 2px #124559;
+  } 
+
+/*--- Violet Hero--- */
+
+.violet-Hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 5rem 0 1rem 0;
+  }
+  
+  .violet-Post h2 {
+    font-size: 1.5rem;
+    
+  }
+  .violet-Post img {
+    margin-top: 2rem;
+    width: 33rem;
+  
+  }
+  
+  .violet-Post:hover img {
+    transform: rotate(-05deg) scale(1.09); 
+  }
+  
+  .violet-Hero h1 {
+    color: var(--mainColour);
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  .violet-Hero h2 {
+    color: var(--secondaryColour);
+    font-family: var(--subTittle);
+  }
+  
+  
+  .violet-Section {
+    line-height: 2.5rem;
+    color: var(--mainColour);
+    text-align: start;
+    padding-top: 3rem;
+    display: flex;
+    gap: 5.5rem;
+  }
+  
+  .violet-Section h3 {
+    font-size: 1.3rem;
+    color: var(--secondaryColour);
+  }
+  
+  .violet-Section p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .violet-Section .software {
+    font-size: 2rem;
+  }
+  
+  .violet-Section hr {
+    margin: 1.5rem;
+    border: var(--border);
+  }
+
+/* ---Content 1----- */
+
+.violet-Sub  {
+  font-size: 2rem;
+  text-align: left;
+  text-underline-offset: 0.9rem;
+}
+
+.violet-Info1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.violet-List1 {
+  display: flex;
+  gap: 8rem;
+}
+
+.violet-List2 {
+  display: flex;
+  gap: 5.5rem;
+}
+
+.violet-List1 h3,
+.violet-List2 h3 
+{
+  color: var(--secondaryColour);
+}
+
+.violet-List1 ul, 
+.violet-List2 ul 
+{
+  margin-left: -1rem;
+  font-size: 1.2rem;
+  font-family: var(--text);
+  color: var(--mainColour);
+  line-height: 2rem;
+}
+
+/* --- content 2 ----*/
+
+.violet-Cont2 h3,
+.violet-Cont3 h3,
+.violet-Cont4 h3
+ {
+  margin-top: 3rem;
+  color: var(--secondaryColour);
+}
+
+.violetIntro2-Text p {
+  margin: 0;
+}
+
+/* --- content 3 --- */
+
+.violetIndex3-moodboard p {
+  margin: 0;
+}
+
+.violet-moodboard {
+  width: 100%;
+  margin: -1rem;
+}
+
+.violet-fonts {
+  margin-top: -1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.violet-fonts h4{
+  color: var(--secondaryColour);
+}
+
+.font1 img {
+  width: 25rem;
+}
+
+.font2 img {
+  
+  width: 20rem;
+  
+}
+
+.violet-palette {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: auto;
+}
+
+.violet-color-swatch {
+  align-content: center;
+  width: 8rem; 
+  height: 3rem; 
+  overflow: hidden;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.violet-color-1 p,
+.violet-color-2 p,
+.violet-color-3 p,
+.violet-color-4 p 
+{
+  color: white;
+}
+
+
+.violet-color-1 { background-color: #602c83; } 
+.violet-color-2 { background-color: #9263a9; } 
+.violet-color-3 { background-color: #4f206e; } 
+.violet-color-4 { background-color: #000000; } 
+.violet-color-5 { background-color: #ffffff; } 
+
+
+/* --- content 4 --- */
+
+.violet-intro4 {
+  display: flex;
+  /* justify-content: start; */
+}
+
+
+.violetIntro4-Img img {
+  width: 20rem;
+}
+
+.violetIntro4-Text {
+  margin-left: 2rem;
+}
+
+.violetIntro4-Text p {
+  margin: 0; 
+}
+
+.violetIntro4-palette img {
+  width: 15rem;
+  margin: 0 2rem 0 3rem;
+}
+
+/* --- content 5 --- */
+
+.violet-Cont5 img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+  /* Responsive Design */
+@media (min-width: 368px) {
+  .violet-Post img {
+    width: 20rem;
+  }
+
+
+  .violet-Section hr {
+    margin: 0;
+  }
+
+  .violet-Hero,
+  .violet-List1,
+  .violet-List2,
+  .violet-Info1,
+  .violet-intro2, 
+  .violet-intro4, 
+  .violet-Section,
+  .violet-fonts
+  {
+    display: block;
+  }
+
+  .violet-fonts .font1 img,
+  .violet-fonts .font2 img{
+    width: 18rem;
+}
+
+ 
+  
+  
+
+
+}
+
+@media (min-width: 767px) {
+
+  .violet-List1 {
+    display: flex;
+    gap: 0rem;
+}
+
+  .violet-fonts {
+    display: block;
+  }
+
+  .violet-Section {
+    gap: 0.5rem;
+  }
+
+  .violet-Post img {
+    width: 20rem;
+  }
+
+  .violet-Section hr {
+    margin: 1.5rem;
+  }
+
+  .violet-Hero,
+  .violet-List1,
+  .violet-List2,
+  .violet-Info1,
+  .violet-intro2, 
+  .violet-intro4, 
+  .violet-Section,
+  .violet-fonts
+  {
+    display: flex;
+  }
+
+  .violet-fonts .font1 img,
+  .violet-fonts .font2 img {
+    width: 18rem;
+}
+
+ 
+
+ 
+
+
+}
+
+@media (min-width: 1200px) {
+
+   .violet-Section {
+    gap: 5rem;
+  }
+
+  .violet-List1 {
+    display: flex;
+    gap: 5rem;
+}
+
+.violet-fonts {
+  display: flex;
+}
+
+.violet-Post img {
+  margin-top: 2rem;
+  width: 33rem;
+}
+
+.font1 img,
+.font2 img {
+    width: 25rem;
+}
+
+ 
+}
+
+@media (min-width: 1900px) {
+
+
+
+}

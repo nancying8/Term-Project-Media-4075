@@ -1,0 +1,67 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+    --bold: 700;
+    --radius: 1.25rem;
+    --boxShadow: -1px 15px 30px -12px #124559 ;
+    --border: solid 2px #124559;
+  } 
+
+  .scroll-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .scroll-motion {
+    border: none;
+    cursor: pointer;
+    background-color: var(--backgroundColour);
+  }
+  
+  .scroll-icon {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--secondaryColour);
+  }
+
+
+  /* Responsive Design */
+@media (min-width: 368px) {
+  .scroll-icon {
+    font-size: 3rem;
+    
+  }
+    
+  }
+  
+@media (min-width: 767px) {
+  .scroll-icon {
+    font-size: 3rem;
+    
+  }
+
+}
+  
+@media (min-width: 1200px) {
+  .scroll-icon {
+    font-size: 3rem;
+    
+  }
+   
+  }
+ 
+@media (min-width: 1900px) {
+  .scroll-icon {
+    font-size: 4rem;
+    
+  }
+
+    
+   
+  }

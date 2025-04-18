@@ -1,0 +1,241 @@
+:root {
+  --title: "Cormorant Upright", serif;
+  --text: "Gilda Display", serif;
+  --subTittle: "Brygada 1918", serif;
+  --mainColour: #124559 ;
+  --secondaryColour:  #6599ae;
+  --backgroundColour: #F3F2F2;
+  --bold: 700;
+  --radius: 1.25rem;
+  --boxShadow: -1px 15px 30px -12px #124559 ;
+  --border: solid 2px #124559;
+} 
+
+body {
+  background-color: var(--backgroundColour);
+}
+
+section {
+  margin: 2.5rem;
+  padding: 2rem;
+  overflow-x: hidden;
+  z-index: 2; 
+}
+
+h1 {
+  font-family: var(--title);
+  color: var(--mainColour);
+  font-size: 3rem;
+}
+
+h2, h3, h4 {
+  font-family: var(--subTittle);
+  color: var(--mainColour);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: var(--text);
+  color: var(--mainColour);
+  line-height: 2rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.highlight {
+  font-weight: 900;
+  color: var(--mainColour);
+  font-family: var(--subTittle);
+}
+
+.subtitle {
+  text-align: center;
+  text-decoration: underline var(--secondaryColour) 2px;
+  text-underline-offset: 0.9rem; 
+  font-size: 2rem;
+  margin: 6rem 0 6rem 0;
+}
+
+.project-subtitle {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--mainColour);
+  margin: 10rem 0;
+  background-color: var(--backgroundColour);
+}
+
+.project-subtitle h2 {
+  font-weight: 200;
+}
+
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.divider {
+  /* margin: 2rem; */
+  border: solid 1px var(--mainColour);
+
+}
+
+.margins {
+  margin: 5rem 0;
+}
+
+ /* Responsive Design */
+@media (min-width: 300px) {
+
+  section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  
+  .subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .project-subtitle {
+    margin: 8rem 0;
+  }
+  .margins {
+    margin: 3rem 0;
+  }
+   }
+ 
+ @media (min-width: 767px) {
+
+   section {
+     margin: 1.5rem;
+     padding: 2rem;
+    }
+    
+    h2 {
+      font-size: 1rem;
+    }
+    
+    h3 {
+      font-size: 0.8rem;
+    }
+
+    h4 {
+      font-size: 0.6rem;
+    }
+    
+    p {
+      font-size: 0.7rem;
+    }
+    .subtitle {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+    }
+    .project-subtitle {
+      margin: 10rem 0;
+    }
+    .margins {
+      margin: 3rem 0;
+    }
+  
+ }
+ 
+ @media (min-width: 1200px) {
+
+  section {
+    margin: 2.5rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    margin: 6rem 0 6rem 0;
+  }
+
+  .project-subtitle {
+    margin: 10rem 0;
+  }
+  .margins {
+    margin: 5rem 0;
+  }
+
+  
+ } 
+
+ @media (min-width: 1900px) {
+
+  section {
+    margin: 0 5rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .project-subtitle {
+    margin: 20rem 0;
+    font-size: 4rem;
+  }
+
+  
+}

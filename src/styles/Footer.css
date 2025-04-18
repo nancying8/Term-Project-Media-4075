@@ -1,0 +1,141 @@
+:root {
+  --title: "Cormorant Upright", serif;
+  --text: "Gilda Display", serif;
+  --subTittle: "Brygada 1918", serif;
+  --mainColour: #124559 ;
+  --secondaryColour:  #6599ae;
+  --backgroundColour: #F3F2F2;
+  --bold: 700;
+  --radius: 1.25rem;
+  --boxShadow: -1px 15px 30px -12px #124559 ;
+  --border: 2px solid var(--mainColour);
+} 
+
+/* footer */
+
+.footer h2 {
+  font-family: var(--text);
+    color: var(--mainColour);
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-top: 4rem ;
+  }
+  
+  .footer p {
+    color: var(--mainColour);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer hr {
+    margin-bottom: 3rem;
+    border: var(--border);
+  }
+  
+  .footer-intro img {
+    width: 10rem;
+  }
+  
+  .footer-intro p {
+    color: var(--mainColour);
+    font-weight: 800;
+    font-size: 0.9rem;
+    display: contents;
+  }
+  
+  .footer-icon {
+    margin-left: 4rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--mainColour);
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.5);
+  }
+  
+  /* Media Query for tablet */
+
+@media (min-width: 368px) {
+
+    .footer h2 {
+        font-size: 2rem;
+      }
+    .footer p {
+        font-size: 1.2rem;
+      }
+
+    .footer-intro {
+      display: grid;
+      justify-items: center;
+      justify-content: center;
+    }
+    .footer-intro p {
+      font-size: 0.9rem;
+    }
+
+    .footer-intro img {
+      width: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo {
+      display: contents;
+    }
+
+    .footer-icon {
+      margin-left: 1rem;
+    }
+
+  } 
+
+@media (min-width: 768px) {
+  .footer-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  
+}
+
+@media (min-width: 1200px) {
+  .footer-icon {
+    font-size: 1.8rem;
+  }
+  
+}
+
+@media (min-width: 1900px) {
+  .footer h2 {
+    font-size: 2.3rem;
+  }
+.footer p {
+    font-size: 1.4rem;
+  }
+
+  .footer-icon {
+    font-size: 2.4rem;
+  }
+  .footer-intro img {
+    width: 9rem;
+  }
+
+
+}
+

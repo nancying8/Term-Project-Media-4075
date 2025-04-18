@@ -1,0 +1,372 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+    --bold: 700;
+    --radius: 1.25rem;
+    --boxShadow: -1px 15px 30px -12px #124559 ;
+    --border: solid 2px #124559;
+  } 
+
+.PcardD-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Pcard-left {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-left: 3rem;
+}
+
+.Pcard-right {
+  width: 100%;
+  display: block;
+  float: right;
+  margin-right: 3rem;
+}
+
+/* Keep images aligned */
+.Pcard-left .SaImg {
+  float: left;
+  max-width: 50%;
+}
+
+.Pcard-right .SaImg {
+  float: right;
+  max-width: 50%;
+} 
+
+.Pcard-intro {
+  max-width: 80%;
+  background-color: var(--backgroundColour);
+  padding: 1.5rem;
+  margin-bottom: 9rem;
+}
+
+/* Alternating layout */
+.Pcard-intro:nth-child(even) {
+  justify-content: flex-start;
+}
+
+.Pcard-intro:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.Pcard {
+    border: solid 2px var(--mainColour);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.Pcard-2 {
+  max-width: 100%;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.Pcard-2 h2 {
+  color: var(--secondaryColour);
+}
+
+.Pcard-2 h3 {
+  color: var(--mainColour);
+}
+
+.Pcard-skill {
+  width: 50%;
+  font-size: 1rem;
+  text-align:center;
+  border: solid 2px var(--mainColour);
+}
+
+.Pcard-Img {
+  padding: 1rem;
+  max-width: 50%;
+}
+
+.Pcard-Icon {
+  font-size: 3rem;
+  color: var(--mainColour);
+}
+
+.Pcard-read {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  border: solid 2px var(--mainColour);
+}
+
+.Pcard-read h4 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 0 0.6rem;
+}
+
+.Pcard-RIcon {
+  position: relative;
+  top: 0.25rem;
+  font-size:2rem;
+  color: var(--mainColour);
+}
+
+.Pcard:hover {
+  background-color: var(--mainColour);
+}
+
+.Pcard-intro:hover .Pcard,
+.Pcard:hover {
+  background-color: var(--mainColour);
+  transition: background-color 0.3s ease-in-out;
+}
+  
+/* Ensure text color changes when hovering over the entire card */
+.Pcard-intro:hover .Pcard-2 h2,  
+.Pcard-intro:hover .Pcard-2 h3,  
+.Pcard-intro:hover .Pcard-2 h4,  
+.Pcard:hover .Pcard-2 h2,  
+.Pcard:hover .Pcard-2 h3
+  {  
+    color: var(--backgroundColour);
+    transition: color 0.3s ease-in-out;
+}
+
+.Pcard-intro:hover .Pcard-skill
+ {
+  border: solid 2px var(--backgroundColour);
+  color: var(--backgroundColour);
+  transition: color 0.3s ease-in-out;
+}
+
+.Pcard-intro:hover .Pcard-read
+  { 
+    border: solid 2px var(--backgroundColour); 
+    background-color: var(--backgroundColour);
+    transition: color 0.3s ease-in-out;
+}
+
+.Pcard-intro:hover .Pcard-read h4  {
+  color: var(--mainColour);
+  transition: color 0.3s ease-in-out;
+}
+
+/* border */
+
+.border:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+
+.border::before,
+.border::after {
+  position: absolute;
+  content: "";
+}
+
+.border {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  border: none;
+  cursor: pointer;
+  min-width: 75px;
+}
+
+.border-1::before,
+.border-1::after {
+background: transparent;
+z-index: 2;
+}
+
+.border.hover-border-1::before,
+.border.hover-border-1::after {
+width: 10%; height: 31%;
+transition: 0.35s;
+}
+
+.border.hover-border-1::before {
+bottom: 0; left: 0;
+border-left: var(--border);
+border-bottom: var(--border);
+}
+
+.border.hover-border-1::after {
+top: 0; right: 0;
+border-right: var(--border);
+border-top: var(--border);
+}
+
+.border.hover-border-1:hover::before,
+.border.hover-border-1:hover::after {
+width: 100%;
+height: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 368px) {
+
+  .Pcard {
+    display: block;
+    
+  }
+
+  .Pcard-Img {
+    max-width: 87%;
+    padding: 1rem 1rem 0 1rem;
+  }
+ 
+  .Pcard-Icon {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .Pcard-2 {
+    line-height: 1rem;
+  }
+
+  .Pcard-skill {
+    margin-bottom: 1.5rem;
+    width: 4.5rem;
+    font-size: 0.5rem;
+    }
+
+    .Pcard-read {
+      width: 5rem;
+    }
+
+    .Pcard-read h4 {
+      font-size: 0.5rem;
+
+    }
+    .Pcard-RIcon {
+      position: relative;
+      top: 0.1rem;
+      font-size:1rem;
+      color: var(--mainColour);
+    }
+
+}
+
+@media (min-width: 767px) {
+
+  .Pcard {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .Pcard-Img {
+    max-width: 60%;
+    padding: 1rem;
+  
+  }
+
+  .Pcard-2 {
+    line-height: 1rem;
+    margin: 0;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .Pcard-Icon {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .Pcard-skill {
+    margin-bottom: 1rem;
+    width: 5.3rem;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  .Pcard-read {
+    width: 71%;
+  }
+  
+  .Pcard-read h4 {
+    font-size: 0.7rem;
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .Pcard {
+    border: solid 2px var(--mainColour);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .Pcard-Img {
+    max-width: 59%;
+
+  }
+
+
+  .Pcard-2 {
+    line-height: 2.5rem;
+    margin: 0;
+  }
+
+  .Pcard-Icon {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .Pcard-skill {
+    margin-bottom: 2.5rem;
+    width: 50%;
+    font-size: 1rem;
+  }
+  .Pcard-read {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    border: solid 2px var(--mainColour);
+  }
+  
+  .Pcard-read h4 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 0 0.6rem;
+  }
+  
+  .Pcard-RIcon {
+    position: relative;
+    top: 0.25rem;
+    font-size:2rem;
+    color: var(--mainColour);
+  }
+
+}
+
+@media (min-width: 1900px) {
+  .Pcard-2 {
+    /* line-height: 4rem; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Pcard-read {
+    margin-bottom: 3rem;
+  }
+
+  .Pcard-Icon {
+    font-size: 3.5rem;
+  }
+  .Pcard-skill {
+    /* margin: 0 0 5rem 0; */
+    font-size: 1.4rem;
+    width: 12rem;
+    line-height: 3rem;
+    margin: 2rem 0 4.5rem 0;
+    
+  }
+
+
+}

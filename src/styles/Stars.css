@@ -1,0 +1,62 @@
+:root {
+  --mainColour: #124559   ;
+  --backgroundColour: #F3F2F2;
+}
+
+.stars-container { 
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  top: 7rem;
+  }
+  
+.stars {
+    position: absolute;
+    transition: transform 0.3s ease;
+    z-index: -2;
+  }
+  
+.stars:before,
+.stars:after {
+  content: "";
+  position: absolute;
+  background: var(--mainColour);
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+}
+
+.stars:before {
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.stars:after {
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+/* Responsive Design */
+@media (min-width: 368px) {
+  .stars-container { 
+    width: 62vw;
+    height: 37vh;
+    margin-top: 2rem;
+    }
+   }
+ 
+ @media (min-width: 767px) {
+  .stars-container { 
+    width: 70vw;
+    height: 40vh;
+    margin-top: 2rem;
+    }
+ }
+ 
+ @media (min-width: 1280px) {
+  .stars-container { 
+    width: 90vw;
+    height: 75vh;
+    margin-top: 3rem;
+    }
+ }
+  

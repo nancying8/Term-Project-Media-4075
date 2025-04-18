@@ -1,0 +1,131 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+  }
+
+.banner-container {
+    display: flex;
+    place-content: left;
+    padding: 1rem;
+    align-items: center;
+    color: var(--mainColour);
+    margin: 10rem 0 1rem 0;
+  }
+  
+.banner-heading {
+    max-width: 40rem;
+    font-size: 3rem; 
+    line-height: 1.375; 
+    background-color: var(--backgroundColour);
+    padding: 2rem 1rem 0 0;
+  }
+
+.banner-bold {
+    color: var(--secondaryColour);
+    margin-left: 0.5rem;
+}
+  
+.banner-highlight {
+    margin-left: 0.5rem;
+    position: relative;
+  }
+  
+.b-svg-highlight {
+    position: absolute;
+    left: -0.5rem;
+    right: -1.2rem;
+    top: -1.8rem;
+    bottom: 0;
+    transform: translateY(0.25rem);
+  }
+
+.banner-subHighlight {
+  color: var(--secondaryColour);
+}
+
+.banner-sub2 {
+  margin-left: 1rem;
+}
+  
+/* Responsive Design */
+@media (min-width: 300px) {
+    
+  .banner-container {
+    margin: 3rem 0 0 0;
+  }
+
+  .banner-heading {
+    max-width: 16rem;
+    font-size: 2rem;
+    line-height: 1.8;
+    padding: 0;
+    
+  }
+
+  .b-svg-highlight {
+    left: -0.8rem;
+    right: -1.4rem;
+    top: -1.3rem;
+  }
+   
+     }
+   
+   
+   @media (min-width: 767px) {
+
+      .banner-container {
+        margin: 5rem 0 0 0;
+      }
+
+      .banner-heading {
+        max-width: 35rem;
+        font-size: 2.5rem;
+      }
+
+      .b-svg-highlight {
+        top: -1.7rem;
+      }
+
+   
+   }
+   
+   @media (min-width: 1200px) {
+
+      .banner-container {
+        margin: 7rem 0 3rem 0;
+      }
+      
+      .banner-heading {
+        max-width: 36rem;
+        font-size: 2.5rem;
+        padding: 1rem 1rem 0 0;
+        margin-bottom: 0;
+      }
+   }
+  
+   @media (min-width: 1900px) {
+
+    .banner-container {
+      margin: 10rem 0 5rem 0;
+    }
+    
+    .banner-heading {
+      max-width: 50rem;
+      font-size: 3.5rem;
+      padding: 6rem 6rem 0 0;
+      margin-bottom: 6rem;
+    }
+    .b-svg-highlight {
+      position: absolute;
+      left: -0.7rem;
+      right: -2.5rem;
+      top: -2.5rem;
+      bottom: 0;
+      transform: translateY(0.25rem);
+    }
+  
+  }

@@ -1,0 +1,123 @@
+:root {
+  --mainColour: #124559 ;
+  --backgroundColour: #F3F2F2;
+}
+
+/* arrow */
+.ion-arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-bottom: 10rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+/* Style for Ionicons */
+.ion-arrow {
+  color: var(--mainColour); 
+  opacity: 0; 
+  animation: arrow-move 1.5s infinite ease-in-out; 
+  margin-bottom: 0.3rem;
+  position: relative;
+  bottom: -0.5rem;
+  
+}
+
+.ion-arrow:nth-child(1) {
+  font-size: 3rem; 
+  animation-delay: 0s;
+}
+
+.ion-arrow:nth-child(2) {
+  font-size: 1.8rem;
+  animation-delay: 0.2s;
+}
+
+.ion-arrow:nth-child(3) {
+  font-size: 1.2rem; 
+  animation-delay: 0.4s; 
+}
+
+/* Keyframes for the animation */
+@keyframes arrow-move {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); 
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px); 
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 300px) {
+  .ion-arrow:nth-child(1) {
+    font-size: 2rem; 
+    animation-delay: 0s;
+  }
+  
+  .ion-arrow:nth-child(2) {
+    font-size: 1.5rem;
+    animation-delay: 0.2s;
+  }
+  
+  .ion-arrow:nth-child(3) {
+    font-size: 1rem; 
+    animation-delay: 0.4s; 
+  }
+  
+
+
+ }
+
+@media (min-width: 767px) {
+  .ion-arrow:nth-child(1) {
+    font-size: 3rem; 
+    animation-delay: 0s;
+  }
+  
+  .ion-arrow:nth-child(2) {
+    font-size: 1.8rem;
+    animation-delay: 0.2s;
+  }
+  
+  .ion-arrow:nth-child(3) {
+    font-size: 1.2rem; 
+    animation-delay: 0.4s; 
+  }
+  
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 1900px) {
+  .ion-arrow:nth-child(1) {
+    font-size: 4rem; 
+    animation-delay: 0s;
+  }
+  
+  .ion-arrow:nth-child(2) {
+    font-size: 2.8rem;
+    animation-delay: 0.2s;
+  }
+  
+  .ion-arrow:nth-child(3) {
+    font-size: 2.2rem; 
+    animation-delay: 0.4s; 
+  }
+  
+
+
+}

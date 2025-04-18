@@ -1,0 +1,326 @@
+:root {
+  --title: "Cormorant Upright", serif;
+  --text: "Gilda Display", serif;
+  --subTittle: "Brygada 1918", serif;
+  --mainColour: #124559 ;
+  --secondaryColour:  #6599ae;
+  --backgroundColour: #F3F2F2;
+  --bold: 700;
+  --radius: 1.25rem;
+  --boxShadow: -1px 15px 30px -12px #124559 ;
+  --border: solid 2px #124559;
+}
+
+.home-intro {
+  background-color: var(--mainColour);
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-intro div {
+  border: solid 1px var(--backgroundColour);
+}
+
+.home-icon {
+  color: var(--backgroundColour);
+  font-size: 2rem;
+}
+
+.icon-tittle {
+  color: var(--backgroundColour);
+  font-size: 1.5rem;
+}
+
+.sign {
+  font-size: 2rem;
+  color: var(--backgroundColour);
+}
+
+/* ----------HomeCon-------------- */
+
+/* home-subtitle */
+
+/* home-card */
+
+.HcardD-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: var(--mainColour);
+}
+
+.Hcard-intro {
+  max-width: 80%;
+  background-color: var(--backgroundColour);
+  padding: 1.5rem;
+  margin-bottom: 9rem;
+}
+
+/* Alternating layout */
+.Hcard-intro:nth-child(even) {
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.Hcard-intro:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+.Hcard {
+  border: var(--border);
+  display: flex;
+}
+
+.Hcard-2 {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Hcard-2 h2, 
+.Hcard-2 h3, 
+.Hcard-2 p {
+  color: var(--mainColour);
+  text-align: left;
+  margin: 1rem;
+}
+
+.h-tools {
+  color: var(--mainColour);
+}
+
+
+.Hcard-Img {
+  padding: 1rem;
+  max-width: 50%;
+}
+
+.Hcard-Icon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2.5rem;
+  color: var(--mainColour);
+  margin: 1rem;
+}
+
+.Hcard-Icon div {
+  color: var(--mainColour);
+}
+
+.Hcard:hover {
+  background-color: var(--mainColour);
+}
+
+.Hcard-intro:hover .Hcard,
+.Hcard:hover {
+    background-color: var(--mainColour);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensure text color changes when hovering over the entire card */
+.Hcard-intro:hover .Hcard-2 h2,  
+.Hcard-intro:hover .Hcard-2 h3,  
+.Hcard-intro:hover .Hcard-2 p,  
+.Hcard-intro:hover .Hcard-Icon,  
+.Hcard:hover .Hcard-2 h2,  
+.Hcard:hover .Hcard-2 h3,  
+.Hcard:hover .Hcard-Icon
+ {  
+    color: var(--backgroundColour);
+    transition: color 0.3s ease-in-out;
+}
+
+/* border */
+
+.border:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+
+.border::before,
+.border::after {
+  position: absolute;
+  content: "";
+}
+
+.border {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  border: none;
+  cursor: pointer;
+  min-width: 75px;
+}
+
+
+.border-1::before,
+.border-1::after {
+  background: transparent;
+  z-index: 2;
+}
+
+.border.hover-border-1::before,
+.border.hover-border-1::after {
+  width: 10%; height: 31%;
+  transition: 0.35s;
+}
+
+.border.hover-border-1::before {
+  bottom: 0; left: 0;
+  border-left: var(--border);
+  border-bottom: var(--border);
+}
+
+.border.hover-border-1::after {
+  top: 0; right: 0;
+  border-right: var(--border);
+  border-top: var(--border);
+}
+
+.border.hover-border-1:hover::before,
+.border.hover-border-1:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/*------- home-bottom-button ---------*/
+
+.HomeBtnC {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.HomeBtn {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  border: none;
+  cursor: pointer;
+  min-width: 5.5rem;
+}
+
+.HomeBtn:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+
+.HomeBtn::before,
+.HomeBtn::after {
+  position: absolute;
+  content: "";
+}
+
+.HomeBtn:hover .BtnLink {
+  color: var(--backgroundColour);
+  background-color: var(--mainColour);
+  padding: 0.5rem 0.6rem;
+}
+
+.Homebtn-1 {
+  padding: 1.5rem;
+  text-align: center;
+  }
+
+.HomeBtn-1::before,
+.HomeBtn-1::after {
+  background: transparent;
+  z-index: 1;
+}
+
+.HomeBtn.HomeHover-border-1::before,
+.HomeBtn.HomeHover-border-1::after {
+  width: 9%; 
+  height: 24%;
+  transition: 0.35s;
+  z-index: -2;
+}
+
+.HomeBtn.HomeHover-border-1::before {
+  bottom: 0; 
+  left: 0;
+  border-left: var(--border);
+  border-bottom: var(--border);
+}
+
+.HomeBtn.HomeHover-border-1::after {
+  top: 0; 
+  right: 0;
+  border-right: var(--border);
+  border-top: var(--border);
+}
+
+.HomeBtn.HomeHover-border-1:hover::before,
+.HomeBtn.HomeHover-border-1:hover::after {
+  width: 99%;
+  height: 99%;
+}
+
+.BtnLink {
+  color: var(--mainColour);
+  font-family: var(--subTittle);
+  font-weight:700;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.button-arrow {
+  position: absolute;
+  bottom: 5rem;
+  left: -7.5rem;
+  font-size: 2rem;
+  color: var(--mainColour);
+  padding: 0.5rem;
+}
+
+/* Responsive Design */
+@media (min-width: 368px) {
+  
+  .home-intro {
+    display: block;
+    margin: 0 2rem;
+    padding: 2rem 0;
+  }
+
+   }
+ 
+ @media (min-width: 767px) {
+
+  .home-intro{
+    background-color: var(--mainColour);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2rem;
+  }
+
+
+  
+ }
+ 
+ @media (min-width: 1200px) {
+
+
+  
+ }
+ @media (min-width: 1900px) {
+  .Homebtn-1 {
+    padding: 1.5rem;
+    text-align: center;
+    }
+
+    .BtnLink {
+      font-size: 1.7rem;
+      padding: 0.8rem;
+    }
+
+    .button-arrow {
+      bottom: 8rem;
+      left: -10rem;
+      font-size: 3rem;
+    }
+ }

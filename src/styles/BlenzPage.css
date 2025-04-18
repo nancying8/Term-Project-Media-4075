@@ -1,0 +1,451 @@
+:root {
+  --title: "Cormorant Upright", serif;
+  --text: "Gilda Display", serif;
+  --subTittle: "Brygada 1918", serif;
+  --mainColour: #124559 ;
+  --secondaryColour:  #6599ae;
+  --backgroundColour: #F3F2F2;
+  --bold: 700;
+  --radius: 1.25rem;
+  --boxShadow: -1px 15px 30px -12px #124559 ;
+  --border: solid 2px #124559;
+} 
+
+/* blenzDetails-page */
+
+.blenz-Hero {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 5rem 0 1rem 0;
+}
+
+.blenz-Post h2 {
+  font-size: 1.5rem;
+  
+}
+.blenz-Post img {
+  width: 20rem;
+  box-shadow: var(--boxShadow);
+}
+
+.blenz-Post:hover img {
+  transform: rotate(-05deg) scale(1.09); 
+}
+
+.blenz-Hero h1 {
+  color: var(--mainColour);
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.blenz-Hero h2 {
+  color: var(--secondaryColour);
+  font-family: var(--subTittle);
+}
+
+.blenz-Icon{
+  font-size: 2rem;
+  color: var(--secondaryColour);
+}
+
+.blenz-Section {
+  line-height: 2.5rem;
+  color: var(--mainColour);
+  text-align: start;
+  padding-top: 3rem;
+  display: flex;
+  gap: 4.5rem;
+}
+
+.blenz-Section h3 {
+  font-size: 1.3rem;
+  color: var(--secondaryColour);
+}
+
+.blenz-Section p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.blenz-Section .software {
+  font-size: 2rem;
+}
+
+.blenz-Section hr {
+  margin: 1.5rem;
+  border: var(--border);
+}
+
+/*---- content-1--- */
+.blenz-Sub  {
+  font-size: 2rem;
+  text-align: left;
+  text-underline-offset: 0.9rem;
+}
+
+.blenz-Info1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blenz-List1 {
+  display: flex;
+  gap: 8rem;
+}
+
+.blenz-List1 h3 {
+  color: var(--secondaryColour);
+}
+
+.blenz-List1 ul {
+  margin-left: -1rem;
+  font-size: 1.2rem;
+  font-family: var(--text);
+  color: var(--mainColour);
+  line-height: 2rem;
+}
+
+/*---- content-2--- */
+.blenz-Cont2 h3 {
+  color: var(--secondaryColour);
+}
+
+.blenz-intro2,
+.blenz-intro4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blenz-Img img {
+  width: 14rem;
+}
+
+.blenzIntro2-Text,
+.blenzIntro4-Text
+ {
+  margin-left: 2rem;
+}
+
+.blenzIntro2-Text p,  
+.blenzIntro4-Text p  {
+  margin: 0;
+}
+
+.blenz-Index2 {
+  margin: 3rem 0;
+}
+
+.blenz-Index2 h3 {
+  margin: 1.5rem 0;
+}
+
+.planet img {
+  width: 15rem;
+  position: relative;
+  top: 1rem;
+}
+
+.planet-Text {
+  margin-left: 1rem;
+}
+
+.planet-Text p {
+  margin: 0;
+}
+
+.planetLogo {
+  height: 50%;
+}
+
+.palette {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: auto;
+}
+
+.color-swatch {
+  align-content: center;
+  width: 8rem; 
+  height: 3rem; 
+  overflow: hidden;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.color-1 p,
+.color-2 p {
+  color: white;
+}
+
+
+.color-1 { background-color: #472616; } 
+.color-2 { background-color: #000000; } 
+.color-3 { background-color: #ffffff; } 
+.color-4 { background-color: #ffd96e; }
+.color-5 { background-color: #faa41e; } 
+.color-6 { background-color: #d7afd2; } 
+
+/*---- content-3--- */
+
+.blenzMood-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blenzIndex3-moodboard p {
+  margin: 0;
+}
+
+.blenzIndex3-moodboard .palette {
+  margin-top: 1rem;
+}
+
+.blenz-Content3 h3 {
+  color: var(--secondaryColour);
+  margin-top: 3rem;
+}
+
+.blenz-moodboard {
+  margin: -1rem;
+}
+
+.blenzIndex3-font img {
+  width: 25rem;
+  margin-left: -0.5rem;
+}
+
+/*---- content-4--- */
+
+.blenzIntro4-Img img {
+  width: 15rem;
+}
+
+.finalBlenz-logo {
+  position: relative;
+  top: 0.5rem;
+}
+
+.blenz-Content4 h3 {
+  color: var(--secondaryColour);
+  margin-top: 3rem;
+}
+
+.blenz-app {
+  position: relative;
+  left : 2.5rem;
+  bottom: 1rem;
+}
+
+.blenz-cup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blenz-cup img {
+  width: 11rem;
+}
+
+.cup-intro {
+  margin-top: 2rem;
+}
+
+/*---- content-5--- */
+
+.blenz-Content5 img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.bee-line {
+  position: relative;
+  top: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 368px) {
+  
+  .blenz-Hero {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blenz-Post img {
+   width: 20rem;
+
+  }
+  .blenz-Icon{
+    margin: 3rem 0 1rem 0;
+    transform: rotate(90deg);
+   }
+
+   .blenz-Section {
+    display: block;
+
+  }
+  .blenz-Section p {
+    font-size: 1.3rem;
+}
+
+  .blenz-Section hr {
+    margin: 0;
+  }
+
+  .blenz-Img {
+    display: flex;
+  }
+  
+  .blenz-Img img {
+    width: 11rem;
+  }
+  
+  .blenz-List1,
+  .blenz-Info1,
+  .blenz-intro2, 
+  .blenz-intro4,
+  .blenz-cup  {
+    display: block;
+  }
+
+  .blenzIntro2-Text, 
+  .blenzIntro4-Text {
+   margin-left:0;
+   margin-top: 1rem;
+  }
+
+  .blenz-moodboard {
+    width: 100%; 
+  }
+  .blenzIndex3-font img {
+    width: 20rem;
+  }
+
+}
+
+@media (min-width: 767px) {
+
+  .blenz-Hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  
+  .blenz-Post img {
+   width: 10rem;
+
+  }
+
+  .blenz-Section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+  }
+
+  .blenz-Section p {
+    font-size: 1rem;
+}
+
+  .blenz-Section hr {
+    margin: 1.5rem;
+    border: var(--border);
+  }
+
+  .blenz-Icon{
+    
+    transform: rotate(0deg);
+   }
+
+   .blenz-Img img {
+    width: 10rem;
+  }
+
+  .planet img {
+    width: 11rem;
+  }
+  .blenz-cup img {
+    width: 6rem;
+}
+.blenzIntro4-Img img {
+  width: 11rem;
+}
+.blenz-Info1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blenz-List1,
+.blenz-Info1,
+.blenz-intro2, 
+.blenz-intro4,
+.blenz-cup  {
+  display: flex;
+}
+
+.blenzIntro2-Text, 
+.blenzIntro4-Text {
+ margin-left:2rem;
+ margin-top: 0;
+}
+
+.blenz-moodboard {
+  width: 50%; 
+}
+.blenzIndex3-font img {
+  width: 25rem;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+  .blenz-Post img {
+    width: 20rem;
+   }
+  .blenz-Icon{
+    transform: rotate(0deg);
+   }
+
+   .blenz-Section {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .blenz-Section p {
+    font-size: 1.3rem;
+}
+
+  .blenz-Img img {
+    width: 14rem;
+  }
+
+  .planet img {
+    width: 15rem;
+  }
+
+  .blenz-cup img {
+    width: 11rem;
+  }
+  .blenzIntro4-Img img {
+    width: 15rem;
+}
+
+}
+
+@media (min-width: 1900px) {
+
+  .blenz-Post img {
+    width: 25rem;
+   }
+
+   .blenz-Content5 img {
+    width: 90%;
+    margin: 0 0 2rem 5rem;
+  }
+
+}

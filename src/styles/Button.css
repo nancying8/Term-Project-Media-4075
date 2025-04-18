@@ -1,0 +1,96 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+    --bold: 700;
+    --radius: 1.25rem;
+    --boxShadow: -1px 15px 30px -12px #124559 ;
+    --border: 2px solid #124559;
+  } 
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto; height: auto;
+    border: none;
+    cursor: pointer;
+    min-width: 5.5rem;
+  }
+
+.btn:active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+  }
+  
+.btn::before,
+.btn::after {
+    position: absolute;
+    content: "";
+  }
+
+.btn-1:hover .btn-text {
+    color: var(--backgroundColour);
+    background-color: var(--mainColour);
+    padding: 0.2rem 0.6rem;
+  }
+  
+.btn-1, .btn-2 {
+  /* wide inside the button */
+    padding: 0.6rem; 
+    text-align: center;
+    }
+
+.btn-2 span {
+  color: var(--backgroundColour);
+  background-color: var(--backgroundColour);
+}
+
+.btn-1::before,
+.btn-1::after {
+  background: transparent;
+  z-index: 2;
+}
+
+
+.btn.hover-border-1::before,
+.btn.hover-border-1::after {
+  width: 9%; 
+  height: 24%;
+  transition: 0.35s;
+}
+
+.btn.hover-border-1::before {
+  bottom: 0; 
+  left: 0;
+  border-left: var(--border);
+  border-bottom: var(--border);
+}
+
+.btn.hover-border-1::after {
+  top: 0; 
+  right: 0;
+  border-right: var(--border);
+  border-top: var(--border);
+}
+
+.btn.hover-border-1:hover::before,
+.btn.hover-border-1:hover::after {
+  width: 99%;
+  height: 99%;  
+}
+
+
+@media (min-width: 1900px) {
+
+  .btn-1, .btn-2  {
+    padding: 1rem 0.8rem;
+    }
+  
+  .btn {
+      min-width: 7.5rem;
+    }
+
+}

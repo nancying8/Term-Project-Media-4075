@@ -1,0 +1,331 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+    --bold: 700;
+    --radius: 1.25rem;
+    --boxShadow: -1px 15px 30px -12px #124559 ;
+    --border: solid 2px #124559;
+  } 
+
+  /* ---Cfestival  Hero ---- */
+
+  .cfestival-Hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 5rem 0 1rem 0;
+  }
+  
+  .cfestival-Post h2 {
+    font-size: 1.5rem;
+    
+  }
+  .cfestival-Post img {
+    margin-top: 2rem;
+    width: 20rem;
+    box-shadow: var(--boxShadow);
+  
+  }
+  
+  .cfestival-Post:hover img {
+    transform: rotate(-05deg) scale(1.09); 
+  }
+  
+  .cfestival-Hero h1 {
+    color: var(--mainColour);
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  .cfestival-Hero h2 {
+    color: var(--secondaryColour);
+    font-family: var(--subTittle);
+  }
+  
+  
+  .cfestival-Section {
+    line-height: 2.5rem;
+    color: var(--mainColour);
+    text-align: start;
+    padding-top: 3rem;
+    display: flex;
+    gap: 5.5rem;
+  }
+  
+  .cfestival-Section h3 {
+    font-size: 1.3rem;
+    color: var(--secondaryColour);
+  }
+  
+  .cfestival-Section p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .cfestival-Section .software {
+    font-size: 2rem;
+  }
+  
+  .cfestival-Section hr {
+    margin: 1.5rem;
+    border: var(--border);
+  }
+
+  /* --- content 1 --- */
+
+  .cfestival-Sub  {
+    font-size: 2rem;
+    text-align: left;
+    text-underline-offset: 0.9rem;
+  }
+  
+  .cfestival-Info1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .cfestival-List1 {
+    display: flex;
+    gap: 8rem;
+  }
+  
+  .cfestival-List1 h3 {
+    color: var(--secondaryColour);
+  }
+  
+  .cfestival-List1 ul {
+    margin-left: -1rem;
+    font-size: 1.2rem;
+    font-family: var(--text);
+    color: var(--mainColour);
+    line-height: 2rem;
+  }
+  
+  /* --- content 2 ---- */
+
+  .cfestival-Cont2 h3,
+  .cfestival-Cont3 h3,
+  .cfestival-Cont4 h3
+   {
+    margin-top: 3rem;
+    color: var(--secondaryColour);
+  }
+  
+  .cfestivalIntro2-Text p {
+    margin: 0;
+  }
+
+  .cfestival-intro2 {
+    display: flex;
+  }
+
+  /* --- content 3 --- */
+
+.cfestivalIndex3-moodboard p {
+  margin: 0;
+}
+
+.cfestival-moodboard {
+  width: 100%;
+  margin: -1rem;
+}
+
+.cfestival-fonts {
+  margin-top: -1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.cfestival-fonts h4{
+  color: var(--secondaryColour);
+}
+
+.font1 img {
+  width: 25rem;
+}
+
+.font2 img {
+  
+  width: 20rem;
+  
+}
+
+.cfestival-palette {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: auto;
+}
+
+.cfestival-color-swatch {
+  align-content: center;
+  width: 8rem; 
+  height: 3rem; 
+  overflow: hidden;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cfestival-color-3 p 
+.cfestival-color-1 p 
+{
+    color: var(--mainColour);
+}
+.cfestival-color-2 p,
+.cfestival-color-6 p,
+.cfestival-color-4 p 
+{
+  color: white;
+}
+
+.cfestival-color-1 { background-color: #5AC9E8; } 
+.cfestival-color-2 { background-color: #262262; } 
+.cfestival-color-3 { background-color: #ffffff; }
+.cfestival-color-4 { background-color: #BD202E; } 
+.cfestival-color-5 { background-color: #FFC839; } 
+.cfestival-color-6 { background-color: #006838; }
+
+
+/* --- content 4 --- */
+
+.cfestival-intro4 {
+  display: flex;
+  /* justify-content: start; */
+}
+
+
+.cfestivalIntro4-Img img {
+  width: 15rem;
+}
+
+.cfestivalIntro4-ImgB img {
+  width: 13rem;
+}
+
+.cfestivalIntro4-ImgD img {
+  width: 16rem;
+}
+
+.cfestivalIntro4-Text {
+  margin-left: 2rem;
+}
+
+.cfestivalIntro4-Text p {
+  margin: 0; 
+}
+
+.cfestivalIntro4-palette img {
+  width: 15rem;
+  margin: 0 2rem 0 3rem;
+}
+
+/* --- content 5 --- */
+
+.cfestival-Cont5 img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 300px) {
+  .cfestival-Hero,
+  .cfestival-List1,
+  .cfestival-List2,
+  .cfestival-Info1,
+  .cfestival-intro2, 
+  .cfestival-intro4, 
+  .cfestival-Section,
+  .cfestival-fonts
+  {
+    display: block;
+  }
+
+  .cfestival-fonts .font1 img,
+  .cfestival-fonts .font2 img {
+    width: 18rem;
+}
+
+.cfestivalIntro4-Text {
+  margin-left: 0;
+}
+
+.cfestival-moodboard {
+  width: 100%; 
+}
+.cfestival-Section hr {
+  margin: 0;
+}
+
+
+
+
+
+}
+
+@media (min-width: 767px) {
+
+  .cfestival-Hero,
+  .cfestival-List1,
+  .cfestival-List2,
+  .cfestival-Info1,
+  .cfestival-intro2, 
+  .cfestival-intro4, 
+  .cfestival-Section,
+  .cfestival-fonts
+  {
+    display: flex;
+  }
+
+
+  .cfestival-fonts .font1 img,
+  .cfestival-fonts .font2 img {
+    width: 19rem;
+}
+
+.cfestivalIntro4-Text {
+  margin-left: 2rem;
+}
+
+.cfestival-moodboard {
+  width: 50%; 
+}
+
+
+.cfestival-Section {
+  gap: 1.5rem;
+}
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .cfestival-fonts .font1 img,
+  .cfestival-fonts .font2 img {
+    width: 25rem;
+}
+
+.cfestival-Section {
+  gap: 5.5rem;
+}
+
+
+
+
+}
+
+@media (min-width: 1900px) {
+
+
+
+}

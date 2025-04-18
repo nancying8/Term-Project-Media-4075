@@ -1,0 +1,415 @@
+:root {
+    --title: "Cormorant Upright", serif;
+    --text: "Gilda Display", serif;
+    --subTittle: "Brygada 1918", serif;
+    --mainColour: #124559 ;
+    --secondaryColour:  #6599ae;
+    --backgroundColour: #F3F2F2;
+    --bold: 700;
+    --radius: 1.25rem;
+    --boxShadow: -1px 15px 30px -12px #124559 ;
+    --border: solid 2px #124559;
+  }
+
+ /* about-page */
+.about-content {
+  display: flex;
+}
+
+.about-intro {
+  margin: 1rem;
+  display: flex;
+  gap: 2rem; 
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.about-intro img {
+  width: 300px;
+  max-width: 100%; 
+  height: auto; 
+}
+
+.about-text {
+  flex: 1; 
+}
+
+.about-text h1 {
+  font-family: var(--subTittle);
+  font-size: 2.5rem;
+  color: var(--secondaryColour);
+  font-weight: var(--bold);
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: var(--mainColour);
+  font-weight: var(--bold);
+}
+
+/* --- Prfil ---- */
+
+.aboutBtnC {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 5rem 0;
+}
+.aboutPdf {
+  display: flex;
+  margin: 3rem 0 5rem 0;
+}
+
+
+.aboutBtn {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  border: none;
+  cursor: pointer;
+  min-width: 5.5rem;
+}
+
+.aboutBtn:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+
+.aboutBtn::before,
+.aboutBtn::after {
+  position: absolute;
+  content: "";
+}
+
+.aboutBtn:hover .BtnLink {
+  color: var(--backgroundColour);
+  background-color: var(--mainColour);
+  padding: 0.5rem 0.6rem;
+}
+
+.aboutbtn-1 {
+  padding: 1.5rem;
+  text-align: center;
+  }
+.aboutbtn-2 {
+  padding: 1.5rem;
+  text-align: center;
+  }
+
+.aboutBtn-1::before,
+.aboutBtn-1::after {
+  background: transparent;
+  z-index: 1;
+}
+.aboutBtn-2::before,
+.aboutBtn-2::after {
+  background: transparent;
+  z-index: 1;
+}
+
+.aboutBtn.aboutHover-border-1::before,
+.aboutBtn.aboutHover-border-1::after {
+  width: 9%; 
+  height: 24%;
+  transition: 0.35s;
+  z-index: -2;
+}
+
+.aboutBtn.aboutHover-border-1::before {
+  bottom: 0; 
+  left: 0;
+  border-left: var(--border);
+  border-bottom: var(--border);
+}
+
+.aboutBtn.aboutHover-border-1::after {
+  top: 0; 
+  right: 0;
+  border-right: var(--border);
+  border-top: var(--border);
+}
+
+.aboutBtn.aboutHover-border-1:hover::before,
+.aboutBtn.aboutHover-border-1:hover::after {
+  width: 99%;
+  height: 99%;
+}
+
+
+/* about-skills */
+.skill-title {
+  font-size: 2rem;
+  font-weight: var(--bold);
+  text-align: left;
+  margin: 5rem 0;
+}
+
+.skills-container {
+  font-size: 3rem;
+  color: var(--mainColour);
+  display: flex;
+  justify-content: start;
+  gap: 3rem; 
+  margin-bottom: 3rem;
+}
+
+.skills-container h3 {
+  color: var(--secondaryColour);
+  margin-left: 0.5rem;
+}
+
+
+
+.skills-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.iconSkill {
+  color: var(--secondaryColour);
+  padding: 1rem;
+  text-align: center;
+}
+
+.skill-lines {
+  border: solid 1px var(--mainColour);
+  margin: 0;
+ }
+
+/* -----Hobby------- */
+
+.photo-content {
+  /* border: var(--border); */
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 30px;
+}
+
+.photo-content p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: var(--bold);
+  
+}
+
+.about-hobby {
+  margin: 2rem 0;
+}
+
+.about-hobby h2 {
+  font-size: 2rem;
+  color: var(--mainColour);
+  font-weight: var(--bold);
+  text-align: left;
+}
+
+.hoobies-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 1rem;
+}
+
+.hoobiesSkill {
+  color: var(--secondaryColour);
+  padding-right: 5rem;
+  text-align: center;
+}
+  
+  /* Responsive Design */
+  @media (min-width: 300px) {
+    .about-text h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .about-intro {
+      display: block;
+      align-items: center; 
+      margin: 0;
+    }
+
+    .about-intro img {
+      width: auto;
+    }
+
+
+    .skills-container {
+      display: grid;
+      font-size: 2rem;
+    }
+    .skills-section {
+      gap: 0;
+    }
+    
+    
+    .skill-title {
+      font-size: 1.8rem;
+      margin: 3rem 0;
+    }
+
+    .about-hobby h2 {
+      font-size: 1.8rem;
+    }
+    
+    .hoobies-icon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      padding: 1rem;
+    }
+
+    .iconSkill {
+      padding: 0.4rem;
+    }
+
+    .hoobiesSkill {
+      padding-right: 4rem;
+  }
+
+  .photo-content {
+    padding: 0;
+  }
+    
+    
+  }
+  
+   
+  
+  @media (min-width: 767px) {
+
+
+    .about-intro {
+      display: flex;
+    }
+    .about-intro img {
+      width: 250px;
+      max-width: 100%; 
+      height: auto; 
+    }
+
+    .about-text h1 {
+      font-size: 2rem;
+      text-align: left;
+    }
+    
+    .skill-title {
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+
+    .about-hobby h2 {
+      font-size: 2rem;
+    }
+    
+    .hoobies-icon {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      padding: 1rem;
+    } 
+
+    .iconSkill {
+      padding: 0;
+    }   
+  }
+  
+  @media (min-width: 1200px) {
+    .about-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .about-intro {
+      margin: 1rem;
+      display: flex;
+      gap: 2rem; 
+      justify-content: space-between;
+      align-items: center; 
+    }
+
+    .about-intro img {
+      width: 300px;
+      max-width: 100%; 
+      height: auto; 
+    }
+    
+    .skill-title {
+      font-size: 2rem;
+      margin: 4rem 0 2rem 0;
+    }
+
+
+    .hoobies-icon {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0;
+      padding: 1rem;
+    } 
+
+    .aboutbtn-1 {
+      padding: 2rem;
+      }
+
+      .iconSkill {
+        margin-top: 2rem;
+        padding-left: 1rem;
+        text-align: center;
+      }
+
+      .skills-section {
+        display: flex;
+        gap: 2rem;
+      }
+  }
+
+  @media (min-width: 1900px) {
+
+  .about-intro img {
+    width: 500px;
+    max-width: 100%; 
+    height: auto; 
+  }
+  .about-text h1 {
+    font-size: 3rem;
+  }
+  .about-text p {
+    font-size: 1.5rem;
+  }
+  .skill-title {
+    font-size: 2.5rem;
+    margin: 7rem 0 2rem 0 ;
+  }
+
+  .about-hobby h2 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .skills-container {
+    margin-bottom: 5rem;
+    font-size: 4rem;
+  }
+
+  .photo-content p {
+    font-size: 1.5rem;
+  }
+
+  .hoobies-icon {
+    gap: 4.5rem;
+    font-size: 4rem;
+  }
+
+  .hoobiesSkill {
+      
+      padding-right: 5rem;
+      text-align: center;
+  }
+  .aboutbtn-1 {
+    padding: 3rem;
+    }
+
+    .skills-section {
+      display: flex;
+      gap: 2.5rem;
+    }
+}
